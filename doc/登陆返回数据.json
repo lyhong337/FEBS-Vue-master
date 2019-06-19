@@ -1,0 +1,72 @@
+{
+    "data": {
+        "permissions": [
+            "user:view",
+            "dept:add",
+            "job:export",
+            "role:add",
+            "weather:view",
+            "dict:add",
+            "role:export",
+            "menu:export",
+            "dict:view",
+            "dept:export",
+            "menu:view",
+            "role:view",
+            "user:export",
+            "job:add",
+            "dept:view",
+            "article:view",
+            "log:view",
+            "jobLog:view",
+            "job:view",
+            "menu:add",
+            "redis:view",
+            "log:export",
+            "movie:coming",
+            "movie:hot",
+            "dict:export",
+            "jobLog:export",
+            "user:online"
+        ],
+        "roles": [
+            "注册用户"
+        ],
+        "exipreTime": "20190408164521",
+        "config": {
+            "userId": 2,
+            "theme": "light",
+            "layout": "side",
+            "multiPage": "0",
+            "fixSiderbar": "1",
+            "fixHeader": "1",
+            "color": "rgb(24, 144, 255)"
+        },
+        "user": {
+            "userId": 2,
+            "username": "scott",
+            "password": "it's a secret",
+            "deptId": 6,
+            "deptName": null,
+            "email": "scott@qq.com",
+            "mobile": "15134627380",
+            "status": "1",
+            "createTime": "2017-12-30 00:16:39",
+            "modifyTime": "2019-01-18 08:59:09",
+            "lastLoginTime": "2019-01-23 15:34:28",
+            "ssex": "0",
+            "description": "我是scott，嗯嗯",
+            "avatar": "gaOngJwsRYRaVAuXXcmB.png",
+            "roleId": null,
+            "roleName": null,
+            "sortField": null,
+            "sortOrder": null,
+            "createTimeFrom": null,
+            "createTimeTo": null,
+            "id": "YBeNsMJ0ZJm9GLJP1rlO",
+            "authCacheKey": 2
+        },
+        "token": "b25e39b47e774b4a05b3cb1555fc377f209457c3fd339d373d3fca7b1ea8be56fdc6ed05b7ffb0700e7300d242fb83b57b35f45ee1b155b380 50a0671bc7ec54c2f2c5bb1aee0651db69ce657e8ab4cb79c7806209103eda8a3bc96aa043a0144ae3c06a5c549ac168183c37384cf4347e450bf11644d0 62c31ffc3059e63722f849a5de4540b0d1"
+    },
+    "message": "认证成功"
+}

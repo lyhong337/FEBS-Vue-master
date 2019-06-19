@@ -1,0 +1,277 @@
+[
+    {
+        "path": "/",
+        "name": "主页",
+        "component": "MenuView",
+        "icon": "none",
+        "redirect": "/home",
+        "children": [
+            {
+                "path": "/home",
+                "name": "系统主页",
+                "component": "HomePageView",
+                "icon": "home",
+                "meta": {
+                    "closeable": false,
+                    "isShow": true
+                }
+            },
+            {
+                "path": "/system",
+                "name": "系统管理",
+                "component": "PageView",
+                "icon": "appstore-o",
+                "meta": {
+                    "closeable": true
+                },
+                "children": [
+                    {
+                        "path": "/system/user",
+                        "name": "用户管理",
+                        "component": "system/user/User",
+                        "icon": "",
+                        "meta": {
+                            "closeable": true
+                        }
+                    },
+                    {
+                        "path": "/system/role",
+                        "name": "角色管理",
+                        "component": "system/role/Role",
+                        "icon": "",
+                        "meta": {
+                            "closeable": true
+                        }
+                    },
+                    {
+                        "path": "/system/menu",
+                        "name": "菜单管理",
+                        "component": "system/menu/Menu",
+                        "icon": "",
+                        "meta": {
+                            "closeable": true
+                        }
+                    },
+                    {
+                        "path": "/system/dept",
+                        "name": "部门管理",
+                        "component": "system/dept/Dept",
+                        "icon": "",
+                        "meta": {
+                            "closeable": true
+                        }
+                    },
+                    {
+                        "path": "/system/dict",
+                        "name": "字典管理",
+                        "component": "system/dict/Dict",
+                        "icon": "",
+                        "meta": {
+                            "closeable": true
+                        }
+                    }
+                ]
+            },
+            {
+                "path": "/monitor",
+                "name": "系统监控",
+                "component": "PageView",
+                "icon": "dashboard",
+                "meta": {
+                    "closeable": true
+                },
+                "children": [
+                    {
+                        "path": "/monitor/online",
+                        "name": "在线用户",
+                        "component": "monitor/Online",
+                        "icon": "",
+                        "meta": {
+                            "closeable": true
+                        }
+                    },
+                    {
+                        "path": "/monitor/systemlog",
+                        "name": "系统日志",
+                        "component": "monitor/SystemLog",
+                        "icon": "",
+                        "meta": {
+                            "closeable": true
+                        }
+                    },
+                    {
+                        "path": "/monitor/redis/info",
+                        "name": "Redis监控",
+                        "component": "monitor/RedisInfo",
+                        "icon": "",
+                        "meta": {
+                            "closeable": true
+                        }
+                    },
+                    {
+                        "path": "/monitor/httptrace",
+                        "name": "请求追踪",
+                        "component": "monitor/Httptrace",
+                        "meta": {
+                            "closeable": true
+                        }
+                    },
+                    {
+                        "path": "/monitor/system",
+                        "name": "系统信息",
+                        "component": "EmptyPageView",
+                        "meta": {
+                            "closeable": true
+                        },
+                        "children": [
+                            {
+                                "path": "/monitor/system/jvminfo",
+                                "name": "JVM信息",
+                                "component": "monitor/JvmInfo",
+                                "meta": {
+                                    "closeable": true
+                                }
+                            },
+                            {
+                                "path": "/monitor/system/tomcatinfo",
+                                "name": "Tomcat信息",
+                                "component": "monitor/TomcatInfo",
+                                "meta": {
+                                    "closeable": true
+                                }
+                            },
+                            {
+                                "path": "/monitor/system/info",
+                                "name": "服务器信息",
+                                "component": "monitor/SystemInfo",
+                                "meta": {
+                                    "closeable": true
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "path": "/job",
+                "name": "任务调度",
+                "component": "PageView",
+                "icon": "clock-circle-o",
+                "meta": {
+                    "closeable": true
+                },
+                "children": [
+                    {
+                        "path": "/job/job",
+                        "name": "定时任务",
+                        "component": "quartz/job/Job",
+                        "icon": "",
+                        "meta": {
+                            "closeable": true
+                        }
+                    },
+                    {
+                        "path": "/job/log",
+                        "name": "调度日志",
+                        "component": "quartz/log/JobLog",
+                        "icon": "",
+                        "meta": {
+                            "closeable": true
+                        }
+                    }
+                ]
+            },
+            {
+                "path": "/web",
+                "name": "网络资源",
+                "component": "PageView",
+                "icon": "compass",
+                "meta": {
+                    "closeable": true
+                },
+                "children": [
+                    {
+                        "path": "/web/weather",
+                        "name": "天气查询",
+                        "component": "web/Weather",
+                        "icon": "",
+                        "meta": {
+                            "closeable": true
+                        }
+                    },
+                    {
+                        "path": "/web/dailyArticle",
+                        "name": "每日一文",
+                        "component": "web/DailyArticle",
+                        "icon": "",
+                        "meta": {
+                            "closeable": true
+                        }
+                    },
+                    {
+                        "path": "/web/movie",
+                        "name": "影视资讯",
+                        "component": "EmptyPageView",
+                        "meta": {
+                            "closeable": true
+                        },
+                        "children": [
+                            {
+                                "path": "/web/movie/hot",
+                                "name": "正在热映",
+                                "component": "web/MovieHot",
+                                "icon": "",
+                                "meta": {
+                                    "closeable": true
+                                }
+                            },
+                            {
+                                "path": "/web/movie/coming",
+                                "name": "即将上映",
+                                "component": "web/MovieComing",
+                                "icon": "",
+                                "meta": {
+                                    "closeable": true
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "path": "/others",
+                "name": "其他模块",
+                "component": "PageView",
+                "icon": "coffee",
+                "meta": {
+                    "closeable": true
+                },
+                "children": [
+                    {
+                        "path": "/others/excel",
+                        "name": "导入导出",
+                        "component": "others/Excel",
+                        "meta": {
+                            "closeable": true
+                        }
+                    }
+                ]
+            },
+            {
+                "path": "/profile",
+                "name": "个人中心",
+                "component": "personal/Profile",
+                "icon": "none",
+                "meta": {
+                    "closeable": true,
+                    "isShow": false
+                }
+            }
+        ]
+    },
+    {
+        "path": "*",
+        "name": "404",
+        "component": "error/404"
+    }
+]
